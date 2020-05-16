@@ -14,7 +14,7 @@ public class OddsOrEvens {
 		System.out.println("Hi " + name + " which do you choose? (o)Odds or (E)Evens");
 		String selection = scnr.next();
 
-		if (selection.equals("odds") || (selection.contentEquals("o"))) {
+		if (selection.equals("odds") || (selection.equalsIgnoreCase("o"))) {
 			System.out.println(name + " has picked odds! So the computer will be Evens");
 		} else {
 			System.out.println(name + " has picked evens! So the computer will be odds");
